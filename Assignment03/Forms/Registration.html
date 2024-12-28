@@ -3,9 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Registration Form</title>
 </head>
 <body>
-    
-</body>
+    <!------ image, back to home page ----->
+        <a href="../Forms/index.html">
+            <img src="../images/IMG4.jpg" alt="This is image" height="40" >
+        </a>
+    <!----- image, saylani logo ------>
+    <p style="text-align: center;">
+        <img src="../images/IMG3.jpg" alt="This is image" height="200" width="200">
+    </p>
+    <!------ Heading ------>
+    <h2 style="text-align: center;">STUDENT REGISTRATION FORM</h2>
+    <!------- Table Start ------>
+    <form action="">
+        <table align="center" cellpadding="15">
+    <!------ First Name ------>
+    <tr>
+       <td>FIRST NAME</td>
+       <td><input type="text" placeholder="Enter the First Name" name="First Name" maxlength="30" />(max 30 characters a-z and A-Z)</td>
+    </tr>
+    <!------ Last Name ------>
+    <tr>
+        <td>LAST NAME</td> 
+        <td><input type="text" placeholder="Enter the LAST Name" name="Last Name" maxlength="30">(max 30 characters a-z and A-Z)</td>
+    </tr> 
+    <!------ Date of birth ------>
+    <tr>
+        <td>DATE OF BIRTH</td>
+        <td><input type="date"></td>
+    </tr>
+    <!------- Email id -------->
+    <tr>
+        <td>EMAIL ID</td>
+        <td><input type="email" placeholder="Enter the Email Address"></td>
+    </tr>
+    <!------- Mobile Number -------->
+    <tr>
+        <td>MOBILE number</td>
+        <td><input type="number" placeholder="Enter the Mobile number" name="Mobile Number" maxlength="10"/>(10 Digits Numbers)</td>
+    </tr>
+    <!------- Gender -------------------->
+    <tr>
+        <td>GENDER</td>
+        <td>
+            Male <input type="radio" name="Gender" value="M" /> 
+            Female <input type="radio" name="" id="" />
+        </td>
+    </tr>
+    <!------- Address ------------------->
+    <tr>
+        <td>ADDRESS</td>
+        <td><textarea name="Address" rows="4" cols="30"></textarea></td>
+    </tr>
+    <!--------- City  ------------------->
+    <tr>
+        <td>CITY</td>
+        <td><input type="text" placeholder="Enter the city Name" name="City" maxlength="30">(max 30 characters a-z and A-Z)</td>
+    </tr>
+    <!---------- Pin Code ---------------->
+    <tr>
+        <td>PIN CODE</td>
+        <td><input type="number" placeholder="Enter the Pin Code" name="Pin Code" maxlength="6">(6 Digits Numbers)</td>
+    </tr>
+    <!------------ State ------------------------>
+    <tr>
+        <td>STATE</td>
+        <td><input type="text" placeholder="Enter the State" name="State" maxlength="30">(max 30 characters a-z and A-Z)</td>
+    </tr>
+    <!------------- Country ------------------------>
+    <tr>
+        <td>COUNTRY</td>
+        <td><input type="text" placeholder="Enter the Country Name"></td>
+    </tr>
+    <!------------- Hobbies ------------------------->
+    <tr>
+        <td>HOBBIES</td>
+        <td>
+            Drawing
+            <input type="checkbox" name="Drawing" />
+            Singing
+            <input type="checkbox" name="Singing" />
+            Dancing
+            <input type="checkbox" name="Dancing" />
+            Sketching
+            <input type="checkbox" name="Sketching" />
+            <br>
+            Others
+            <input type="checkbox" name="Others" />
+            <input type="text" name="text" />
+        </td>
+    </tr>
+    <!-------------- Qualification --------------------->
+    <tr>
+        <td>QUALIFICATION</td>
+        <td>
+            <table>
+                <tr>
+                    <td align="center" ><b>Sl.No.</b></td>
+                    <td align="center" ><b>Examination</b></td>
+                    <td align="center" ><b>Board</b></td>
+                    <td align="center" ><b>Percentage</b></td>
+                    <td align="center" ><b>Year of Passing</b></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text" name="Class X_Board" id=""></td>
+                </tr>
+            </table>
+        </td>
+       
+    </tr>
+</table>
+</form>
+<body/>
 </html>
