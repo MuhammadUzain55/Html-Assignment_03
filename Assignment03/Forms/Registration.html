@@ -54,7 +54,10 @@
     </tr>
     <!------- Address ------------------->
     <tr>
-        <td>ADDRESS</td>
+        <td>ADDRESS
+
+
+        </td>
         <td><textarea name="Address" rows="4" cols="30"></textarea></td>
     </tr>
     <!--------- City  ------------------->
@@ -97,7 +100,12 @@
     </tr>
     <!-------------- Qualification --------------------->
     <tr>
-        <td>QUALIFICATION</td>
+        <td>QUALIFICATION
+
+
+
+
+        </td>
         <td>
             <table>
                 <tr>
@@ -110,13 +118,66 @@
                 <tr>
                     <td>1</td>
                     <td>Class X</td>
-                    <td><input type="text" name="Class X_Board" id=""></td>
+                    <td><input type="text" name="Class X_Board" maxlength="30" /></td>
+                    <td><input type="text" name="Class X_Percentage"  maxlength="30"/></td>
+                    <td><input type="text" name="Class X_Year of Passing" maxlength="30"/></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><input type="text" name="Class XII_Board" maxlength="30" /></td>
+                    <td><input type="text" name="Class XII_Percentage" maxlength="30" /></td>
+                    <td><input type="text" name="Class XII_Year of Passing" maxlength="30" /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+                    <td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+                    <td><input type="text" name="Graduation_Year of Passing" maxlength="30" /></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><input type="text" name="Masters_Board" maxlength="30" /></td>
+                    <td><input type="text" name="Masters_Percentage" maxlength="30" /></td>
+                    <td><input type="text" name="Masters_Year of Passing" maxlength="30" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td align="center">(10 char max)</td>
+                    <td align="center">(upto 2 decimal)</td>
                 </tr>
             </table>
         </td>
-       
+    </tr>
+    <!--------------- Courses ----------------------------->
+    <tr>
+        <td>COURSES <br>APPLIED FOR</td>
+        <td>
+            <select name="Courses" >
+               <option value="">Select any course</option>
+               <option value="BCA">BCA</option>
+               <option value="B.A">B.A</option>
+               <option value="B.sc">B.sc</option>
+               <option value="B.com">B.com</option>
+            </select>
+        </td>
+    </tr>
+    <!----------------- Picture Upload ------------------------->
+    <tr>
+        <td>Upload your pic <br> (only .png,.jpg,.jpeg formats allow)</td>
+        <td><input type="file" name="pic" /></td>
+    </tr>
+    <!---------------- Button ------------------------------>
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </td>
     </tr>
 </table>
 </form>
-<body/>
+</body>
 </html>
